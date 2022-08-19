@@ -1,0 +1,49 @@
+.box {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #dddddd;
+    font-size: 25px;
+    width: 70%;
+    height: 3rem;
+}
+.centered {
+    text-align: center;
+    margin-top: 50px;
+
+}
+.btn {
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    cursor: pointer;
+    height: 3rem;
+}
+h1{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+.gbtn {
+    margin: 15px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif; 
+    cursor:grab;
+    height: 50px;
+}
+.ingredients{
+    font-size: 25px;
+    background-color: #a0f6b0;
+    padding: 2rem;
+    margin: 10px;
+    font-family: Verdana, Geneva, sans-serif; 
+    text-align: left;
+}
+.delicon{
+    float: right;
+
+}

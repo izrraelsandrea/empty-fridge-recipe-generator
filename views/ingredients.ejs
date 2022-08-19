@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= pageTitle %></title>
+<%- include('./includes/header.ejs') %>
 </head>
 <body>
-    
+    <main>
+        <div class="centered">
+            <h1>What do you have in your fridge <%=username %>?</h1>
+            <form action="/recipes/add-ingredients" method="POST">
+                <input type="text" name="description" class="box">
+                <input type="hidden" name="userid" value=<%=userid %>>
+                <button type="submit"class="btn">Add it</button>
+            </form>
+            <% if (hasIngredients) { %>
+                <% ingredients.forEach(i => { %>
+                <div class="ingredients">
+                <%= i.description %>
+                <a href="/recipes/delete/?id=<%=i.id%>" class="delicon"><i class="fa-solid fa-trash-can fa-sm" style="color: #e74b4b;"></i></a>
+                </div>
+                <% }); %>
+            <% } %>
+            <form accept="/generate" method="POST">
+                <button type="submit" class="gbtn">Get me Ideas</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
