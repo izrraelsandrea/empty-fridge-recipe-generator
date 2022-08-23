@@ -98,7 +98,7 @@ exports.postGenerator = (req, res, next) => {
             query=ingredients.toString().replace(/,/g,"+");
             console.log('QUERY: ',query);
             if(!query){query='Empy fridge'}
-            
+
             axios.get('https://www.googleapis.com/customsearch/v1',
             {
                 params: {
@@ -132,3 +132,6 @@ exports.postGenerator = (req, res, next) => {
         })
         .catch(err => console.log(err));
 };
+exports.getLoginRedirect = (req, res, next) => {
+res.redirect('recipes/login');
+}
