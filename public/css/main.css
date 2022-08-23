@@ -27,7 +27,22 @@ h1{
     font-style: normal;
     font-variant: normal;
     text-transform: none;
+    margin-top: 30px;
 }
+h2{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-top: 5px;
+}
+
 .gbtn {
     margin: 15px;
     font-size: 25px;
@@ -43,7 +58,30 @@ h1{
     font-family: Verdana, Geneva, sans-serif; 
     text-align: left;
 }
+.recipes{
+    font-size: 25px;
+    padding: 2rem;
+    margin: 10px;
+    font-family: Verdana, Geneva, sans-serif; 
+    text-align: left;
+}
+.recipes-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: #333333;
+}
 .delicon{
     float: right;
-
+}
+.maing{
+    display:flex;
+    justify-content:space-between;
+    background-color: #a0e7f6;
+    border-radius: 25px;
+    margin: 25px;
+}
+.recipes-img{
+  max-width: 110px;
+  margin: 25px;
+  border-radius: 25px;
 }

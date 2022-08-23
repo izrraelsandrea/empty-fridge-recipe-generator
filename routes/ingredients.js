@@ -16,6 +16,8 @@ router.post('/login',ingController.postLogin);
 
 router.get('/login',ingController.getLogin);
 
+router.post('/generate',ingController.postGenerator);
+
 
 
 module.exports = router;

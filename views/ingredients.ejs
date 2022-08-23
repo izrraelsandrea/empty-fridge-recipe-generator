@@ -17,9 +17,11 @@
                 </div>
                 <% }); %>
             <% } %>
-            <form accept="/generate" method="POST">
+            <form action="/recipes/generate" method="POST">
+                <input type="hidden" name="uid" value="<%=userid %>">
                 <button type="submit" class="gbtn">Get me Ideas</button>
             </form>
+            <a href="/recipes/login"><i class="fa-solid fa-arrow-right-from-bracket" style="color:red;font-size:30px;"></i></a>
         </div>
     </main>
 </body>

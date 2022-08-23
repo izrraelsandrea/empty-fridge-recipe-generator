@@ -21,6 +21,7 @@ User.hasMany(Ingredient);
 Ingredient.belongsTo(User, {constraints: true, onDelete: 'CASCADE'});
 
 
+//sequelize.sync({force:true})
 sequelize.sync()
 .then(connect =>{
 app.listen(3200);

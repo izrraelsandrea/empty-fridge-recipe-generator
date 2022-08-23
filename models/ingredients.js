@@ -2,7 +2,7 @@ const {Sequelize, Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../util/database');
 
-const Ingredient = sequelize.define('ingredients', { 
+const Ingredient = sequelize.define('ingredient', { 
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -14,4 +14,5 @@ const Ingredient = sequelize.define('ingredients', {
     allowNull: false
     }
 });
+
 module.exports = Ingredient;

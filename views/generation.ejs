@@ -1,0 +1,27 @@
+<%- include('./includes/header.ejs') %>
+</head>
+<body>
+    <main>
+        <h1>Your ingredients: </h1>
+            <h2><%=qingredients%></h2>
+                <% if (hasItems) { %>
+                    <% items.forEach((i, index) => { %>
+                <a href="<%=i.link %>" class="recipes-link" target="_blank">
+                <div class="maing">
+                    <div class="recipes">
+                        <h3><%= i.title %></h3>
+                    </div>
+                    <div>
+                        <img src="<%=thumbnails[index] %>" class="recipes-img" >
+                    </div>
+                </div>
+                </a>
+                <% }); %>
+            <% } %>
+        <div class="centered">
+            <a href="/recipes/login"><i class="fa-solid fa-arrow-right-from-bracket" style="color:red;font-size:30px;"></i></a>
+            <a href="/recipes/ingredients"><h2 style="cursor:pointer">Back to ingredients</h2></a>
+        </div>
+    </main>
+</body>
+</html>
