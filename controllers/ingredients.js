@@ -1,6 +1,7 @@
 const axios = require('axios');
 const Ingredients = require('../models/ingredients');
 const Users = require('../models/users');
+require('dotenv').config();
 let activeUsername; 
 let activeUserid;
 let query;
@@ -102,7 +103,7 @@ exports.postGenerator = (req, res, next) => {
             axios.get('https://www.googleapis.com/customsearch/v1',
             {
                 params: {
-                key:'AIzaSyCH3J60QJjYT8LxPc9rCt0y2scmAryR1cU',
+                key:process.env.GAPI,
                 cx:'95ac648edc12f4e72',
                 q: query+'+recipes'
                 }

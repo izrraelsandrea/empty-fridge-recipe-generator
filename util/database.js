@@ -5,12 +5,3 @@ const sequelize = new Sequelize(process.env.DBNAME,process.env.USERNAME,process.
     host: 'sql8.freemysqlhosting.net'
 });
 module.exports = sequelize;
-
-// Server: sql8.freemysqlhosting.net
-// Name: sql8514064
-// Username: sql8514064
-// Password: DAUni9n7Vb
-
-// DBNAME="recipes"
-// USERNAME="root"
-// PASS="MaxNode09"
