@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/izrraelsandrea/recipes.git"
   },
+  "engines": {
+    "node" : "18.4.0"
+  },
   "keywords": [
     "nodejs"
   ],

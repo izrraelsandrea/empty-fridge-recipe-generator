@@ -5,6 +5,7 @@ const sequelize = require('./util/database');
 const ingredients = require('./controllers/ingredients');
 const Ingredient = require('./models/ingredients');
 const User = require('./models/users');
+const port = process.env.PORT || 5000;
 
 const app = express();
 
@@ -24,6 +25,6 @@ Ingredient.belongsTo(User, {constraints: true, onDelete: 'CASCADE'});
 //sequelize.sync({force:true})
 sequelize.sync()
 .then(connect =>{
-app.listen(3200);
+app.listen(port);
 })
 .catch(err =>console.log(err));
