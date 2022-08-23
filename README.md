@@ -18,4 +18,6 @@ Table associations
 
 Magic sequelize
 
+ENV vars set ups
+
 Google custom search API integration
